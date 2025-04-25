@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+
+  nav {
+    background-color: #0d0e24;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .logo span {
+    color: #a855f7;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 1rem;
+  }
+
+  .nav-links a:hover {
+    color: #a855f7;
+  }
+
+  .container {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .login-box {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .login-box h2 {
+    color: #a855f7;
+    margin-bottom: 1.5rem;
+  }
+
+  .login-box input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .login-box button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #9333ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  .login-box button:hover {
+    background-color: #7e22ce;
+  }
+
+  .login-box p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .login-box a {
+    color: #a855f7;
+    text-decoration: none;
+  }
+
+  .chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7c3aed;
+    padding: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Responsive design */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    .nav-links a {
+      padding: 0.3rem 0;
+    }
+
+    .login-box {
+      padding: 1.5rem;
+    }
+
+    .chat-icon {
+      padding: 12px;
+      font-size: 18px;
+    }
+  }

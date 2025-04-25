@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusZen Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Focus<span>Zen</span></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Challenge</a>
+      <a href="#">Search E</a>
+      <a href="#">Improve</a>
+      <a href="#">Resources</a>
+      <a href="#">Community</a>
+      <a href="#">Login</a>
+    </div>
+  </nav>
+
+  <!-- Login Form -->
+  <div class="container">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="text" placeholder="Enter your username" required />
+        <input type="email" placeholder="Enter your email" required />
+        <input type="password" placeholder="Enter your password" required />
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#">Signup</a></p>
+    </div>
+  </div>
+
+  <!-- Chat Icon -->
+  <div class="chat-icon">💬</div>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Logged in successfully!");
+    });
+  </script>
+
+</body>
+</html>
